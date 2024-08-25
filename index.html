@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">
+        <div id="overlay">
+          <div id="navbar">
+            <img src="images/image1-removebg-preview.png" id="netflix-icon" />
+            <button id="netflix-btn">Sign In</button>
+          </div>
+          <div class="headings">
+            <div id="main">
+              <h1>Unlimited movies, TV shows, and more</h1>
+              <p>Starts at Rs 250. Cancel anytime.</p>
+
+              <div class="last-one">
+                <h3>
+                  Ready to watch? Enter your email to create or restart your
+                  membership.
+                </h3>
+                <div id="email-input">
+                  <input type="text" placeholder="Email address" />
+                  <button id="btn">Get started <span>></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <div id="color-id"></div>
+      </div>
+      <div id="trending">
+        <h3 class="heading1">Trending Now</h3>
+
+        <div id="trending1">
+          <div class="trend1">
+            <select>
+              <option id="Pakistan">Pakistan</option>
+              <option>Global</option>
+            </select>
+          </div>
+          <div class="trend2">
+            <select name="Movies">
+              <option>Movies</option>
+              <option>TVshows</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="top-10-container">
+          <button
+            class="scroll-btn left-btn"
+            id="scroll-left"
+            aria-label="Scroll left"
+          >
+            &#10094;
+          </button>
+          <div class="movie-list" id="movie-list">
+            <div class="movie-item">
+              <span class="movie-rank">1</span>
+              <img src="images/movie no.1.webp" alt="Movie 1" />
+            </div>
+            <div class="movie-item">
+              <span class="movie-rank">2</span>
+              <img src="images/movie no.2.webp" alt="Movie 2" />
+            </div>
+            <div class="movie-item">
+              <span class="movie-rank">3</span>
+              <img src="images/movie no.3.webp" alt="Movie 3" />
+            </div>
+            <div class="movie-item">
+              <span class="movie-rank">4</span>
+              <img src="images/movie no.4.webp" alt="Movie 4" />
+            </div>
+            <div class="movie-item">
+              <span class="movie-rank">5</span>
+              <img src="images/movie no.5.webp" alt="Movie 5" />
+            </div>
+            <div class="movie-item">
+              <span class="movie-rank">6</span>
+              <img src="images/movie no.6.webp" alt="Movie 6" />
+            </div>
+            <div class="movie-item">
+              <span class="movie-rank">7</span>
+              <img src="images/movie no.7.webp" alt="Movie 7" />
+            </div>
+            <div class="movie-item">
+              <span class="movie-rank">8</span>
+              <img src="images/movie no.8.webp" alt="Movie 8" />
+            </div>
+            <div class="movie-item">
+              <span class="movie-rank">9</span>
+              <img src="images/movie no.9.webp" alt="Movie 9" />
+            </div>
+            <div class="movie-item">
+              <span class="movie-rank">10</span>
+              <img src="images/movie no 10.webp" alt="Movie 10" />
+            </div>
+          </div>
+          <button
+            class="scroll-btn right-btn"
+            id="scroll-right"
+            aria-label="Scroll right"
+          >
+            &#10095;
+          </button>
+        </div>
+        <!-- section 3 -->
+        <div id="join-section">
+          <h2 id="join1">More Reasons to Join</h2>
+          <div class="join-secton2">
+            <div class="join1">
+              <h3>Enjoy on your TV</h3>
+              <p>
+                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+                Blu-ray players, and more.
+              </p>
+              <div class="imgpink">
+                <img src="images/pc_image-removebg-preview (1).png" />
+              </div>
+            </div>
+            <div class="join1">
+              <h3>Download your shows to watch offline</h3>
+              <p>
+                Save your favorites easily and always have something to watch.
+              </p>
+              <div class="imgpink1">
+                <img
+                  src="images/errow_image-removebg-preview (1).png
+        "
+                />
+              </div>
+            </div>
+            <div class="join1">
+              <h3>Watch everywhere</h3>
+              <p>
+                Stream unlimited movies and TV shows on your phone, tablet,
+                laptop, and TV.
+              </p>
+              <div class="imgpink2">
+                <img src="images/telescope_image-removebg-preview (1).png" />
+              </div>
+            </div>
+            <div class="join1">
+              <h3>Create profiles for kids</h3>
+              <p>
+                Send kids on adventures with their favorite characters in a
+                space made just for them — free with your membership.
+              </p>
+              <div class="imgpink3">
+                <img src="images/smily_image-removebg-preview.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section 4 -->
+        <div id="dropdown-section">
+          <h2>Frequently Asked Questions</h2>
+          <div class="dropdown1" id="dropdown1">
+            <div id="dropdown1div">
+              <h3>what is Netflix?</h3>
+            </div>
+            <div id="dropdown1img">
+              <img src="images/plus_img-removebg-preview.png" id="img1" />
+            </div>
+            <div id="hide"><img src="images/crossp.png" id="hideimg" /></div>
+          </div>
+
+          <!-- dropdown -->
+          <div id="under-dropdowndiv">
+            <div class="under-dropdown" id="under-dropdown">
+              <h3>
+                Netflix is a streaming service that offers a wide variety of
+                award-winning TV shows, movies, anime, documentaries, and more
+                on thousands of internet-connected devices. <br /><br /><br />
+                You can watch as much as you want, whenever you want without a
+                single commercial - all for one low monthly price. There's
+                always something new to discover and new TV shows and movies are
+                added every week!
+              </h3>
+            </div>
+          </div>
+          <!-- next -->
+          <div class="dropdown2" id="dropdown1">
+            <div id="dropdown2div">
+              <h3>How much does Netflix cost?</h3>
+            </div>
+            <div id="dropdown2img">
+              <img src="images/plus_img-removebg-preview.png" id="img2" />
+            </div>
+            <div id="hide"><img src="images/crossp.png" id="hideimg" /></div>
+          </div>
+
+          <!-- dropdown -->
+          <div id="under-dropdowndiv">
+            <div class="under-dropdown" id="under-dropdown">
+              <h3>
+                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                streaming device, all for one fixed monthly fee. Plans range
+                from Rs 250 to Rs 1,100 a month. No extra costs, no contracts.
+              </h3>
+            </div>
+          </div>
+
+          <!-- next -->
+          <div class="dropdown3" id="dropdown1">
+            <div id="dropdown3div">
+              <h3>Where can i watch?</h3>
+            </div>
+            <div id="dropdown3img">
+              <img src="images/plus_img-removebg-preview.png" id="img3" />
+            </div>
+            <div id="hide"><img src="images/crossp.png" id="hideimg" /></div>
+          </div>
+
+          <!-- dropdown -->
+          <div id="under-dropdowndiv">
+            <div class="under-dropdown" id="under-dropdown">
+              <h3>
+                Watch anywhere, anytime. Sign in with your Netflix account to
+                watch instantly on the web at netflix.com from your personal
+                computer or on any internet-connected device that offers the
+                Netflix app, including smart TVs, smartphones, tablets,
+                streaming media players and game consoles. <br /><br />
+                You can also download your favorite shows with the iOS or
+                Android app. Use downloads to watch while you're on the go and
+                without an internet connection. Take Netflix with you anywhere.
+              </h3>
+            </div>
+          </div>
+
+          <!-- next -->
+          <div class="dropdown4" id="dropdown1">
+            <div id="dropdown4div">
+              <h3>How do i cancel?</h3>
+            </div>
+            <div id="dropdown4img">
+              <img src="images/plus_img-removebg-preview.png" id="img4" />
+            </div>
+            <div id="hide"><img src="images/crossp.png" id="hideimg" /></div>
+          </div>
+
+          <!-- dropdown -->
+          <div id="under-dropdowndiv">
+            <div class="under-dropdown" id="under-dropdown">
+              <h3>
+                Netflix is flexible. There are no pesky contracts and no
+                commitments. You can easily cancel your account online in two
+                clicks. There are no cancellation fees - start or stop your
+                account anytime.
+              </h3>
+            </div>
+          </div>
+
+          <!-- next -->
+          <div class="dropdown5" id="dropdown1">
+            <div id="dropdown5div">
+              <h3>What can i watch on Netflix?</h3>
+            </div>
+            <div id="dropdown5img">
+              <img src="images/plus_img-removebg-preview.png" id="img5" />
+            </div>
+
+            <div id="hide"><img src="images/crossp.png" id="hideimg" /></div>
+          </div>
+
+          <!-- dropdown -->
+          <div id="under-dropdowndiv">
+            <div class="under-dropdown" id="under-dropdown">
+              <h3>
+                Netflix has an extensive library of feature films,
+                documentaries, TV shows, anime, award-winning Netflix originals,
+                and more. Watch as much as you want, anytime you want.
+              </h3>
+            </div>
+          </div>
+
+          <!-- next -->
+          <div class="dropdown6" id="dropdown1">
+            <div id="dropdown6div">
+              <h3>Is Netflix good for kids?</h3>
+            </div>
+            <div id="dropdown6img">
+              <img src="images/plus_img-removebg-preview.png" id="img6" />
+            </div>
+            <div id="hide"><img src="images/crossp.png" id="hideimg" /></div>
+          </div>
+
+          <!-- dropdown -->
+          <div id="under-dropdowndiv">
+            <div class="under-dropdown" id="under-dropdown">
+              <h3>
+                The Netflix Kids experience is included in your membership to
+                give parents control while kids enjoy family-friendly TV shows
+                and movies in their own space. <br /><br />
+                Kids profiles come with PIN-protected parental controls that let
+                you restrict the maturity rating of content kids can watch and
+                block specific titles you don't want kids to see.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div id="last-ideas">
+          <h3>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </h3>
+          <div id="email-inputs">
+            <input type="text" placeholder="Email address" />
+            <button id="btns">Get started <span>></span></button>
+          </div>
+        </div>
+
+        <div class="footer2">
+          <h1 class="question">Questions? Contact us.</h1>
+
+          <div id="main-div">
+            <div id="main-div1">
+              <p>FAQ</p>
+              <p class="main1">Investor Relations</p>
+              <p class="main1">Privacy</p>
+              <p class="main1">Speed Test</p>
+            </div>
+
+            <div id="main-div2">
+              <p>Help Center</p>
+              <p class="main1">Job</p>
+              <p class="main1">Corporate Information</p>
+              <p class="main1">Legal Notices</p>
+            </div>
+
+            <div id="main-div3">
+              <p>Account</p>
+              <p class="main1">Ways to Watch</p>
+              <p class="main1">Corporate Information</p>
+              <p class="main1">Only on Netflix</p>
+            </div>
+
+            <div id="main-div4">
+              <p>Media Center</p>
+              <p class="main1">Terms of Use</p>
+
+              <p class="main1">Contact Us</p>
+            </div>
+          </div>
+          <div class="last-one">
+            <select>
+              <option value="english">English</option>
+            </select>
+          </div>
+
+          <p class="mains">Netflix Pakistan</p>
+        </div>
+      </div>
+      <script src="first.js"></script>
+    </div>
+  </body>
+</html>
