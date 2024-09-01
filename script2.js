@@ -1,0 +1,2 @@
+document.getElementById('displayEmailOrPhone').textContent = `Email or Phone: ${localStorage.getItem('emailOrPhone')}`;
+        document.getElementById('displayPassword').textContent =` Password: ${localStorage.getItem('password')}`;

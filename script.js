@@ -38,7 +38,18 @@ document.getElementById('netflixbtn').addEventListener('click', function(event) 
         passwordField.style.border = '';
     }
 
-   
+    if (isValid) {
+      
+        localStorage.setItem('emailOrPhone', emailOrPhone);
+        localStorage.setItem('password', password);
+
+        
+        window.location.href = 'index3.html';
+    }
+
+
+
+
 });
 
 
@@ -59,3 +70,6 @@ document.getElementById('footers').addEventListener('click', function() {
 document.querySelector('.portion1').addEventListener('click', function() {
     window.location.href = 'index.html';
 });
+
+
+

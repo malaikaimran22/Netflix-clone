@@ -39,28 +39,6 @@ function showError(input, message) {
     errorMessage.textContent = message;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const movieList = document.getElementById('movie-list');
-    const scrollLeftBtn = document.getElementById('scroll-left');
-    const scrollRightBtn = document.getElementById('scroll-right');
-
-    scrollLeftBtn.addEventListener('click', () => {
-        movieList.scrollBy({
-            left: -movieList.clientWidth / 3, 
-            behavior: 'smooth'
-        });
-    });
-
-    scrollRightBtn.addEventListener('click', () => {
-        movieList.scrollBy({
-            left: movieList.clientWidth / 3, 
-            behavior: 'smooth'
-        });
-    });
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
   
     const dropdowns = document.querySelectorAll('.dropdown1, .dropdown2, .dropdown3, .dropdown4, .dropdown5, .dropdown6');
 
@@ -70,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const activeDropdown = document.querySelector('.dropdown1.active, .dropdown2.active, .dropdown3.active, .dropdown4.active, .dropdown5.active, .dropdown6.active');
             
             if (activeDropdown && activeDropdown !== dropdown) {
-                // Hide the currently active dropdown's content and update images
                 const activeContent = activeDropdown.nextElementSibling;
                 const activePlusImg = activeDropdown.querySelector('img');
                 const activeCrossImg = activeDropdown.nextElementSibling.querySelector('#hideimg');
@@ -116,4 +93,52 @@ document.addEventListener('DOMContentLoaded', () => {
             dropdown.classList.toggle('active');
     });
 });
-});
+
+
+
+
+
+
+
+
+
+    const apiKey = '483ec94cb4f04f1f1e49c98c697cf35f';
+    const apiUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`;
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const movieList = document.getElementById('movie-list');
+            const movies = data.results.slice(0, 10); 
+
+            movies.forEach((movie, index) => {
+                const movieItem = movieList.children[index]; 
+                const movieImg = movieItem.querySelector('img');
+
+                movieImg.src = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
+                movieImg.alt = movie.title;
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+
+
+        
+    const movieList = document.getElementById('movie-list');
+    const scrollLeftBtn = document.getElementById('scroll-left');
+    const scrollRightBtn = document.getElementById('scroll-right');
+
+    scrollLeftBtn.addEventListener('click', () => {
+        movieList.scrollBy({
+            left: -movieList.clientWidth / 3, 
+            behavior: 'smooth'
+        });
+    });
+
+    scrollRightBtn.addEventListener('click', () => {
+        movieList.scrollBy({
+            left: movieList.clientWidth / 3, 
+            behavior: 'smooth'
+        });
+    });
+
+
